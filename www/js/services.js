@@ -6,29 +6,39 @@ angular.module('starter.services', [])
   // Some fake testing data
   var chats = [{
     id: 0,
-    name: 'Ben Sparrow',
-    lastText: 'You on your way?',
-    face: 'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'
+    name: 'Ciudad Bolívar',
+    lastText: 'Teatro Las Nieves - 20/06',
+    face: 'img/giras/ciudad-bolivar.jpg'
   }, {
     id: 1,
-    name: 'Max Lynx',
-    lastText: 'Hey, it\'s me',
+    name: 'Lecheria',
+    lastText: 'Hotel Punta Palma - 21/06',
     face: 'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'
   },{
     id: 2,
-    name: 'Adam Bradleyson',
-    lastText: 'I should buy a boat',
+    name: 'Barinas',
+    lastText: "Salón Quero's - 26/06",
     face: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
   }, {
     id: 3,
-    name: 'Perry Governor',
-    lastText: 'Look at my mukluks!',
+    name: 'San Antonio de los Altos',
+    lastText: 'C.C. La Casona II - 27/06',
     face: 'https://pbs.twimg.com/profile_images/598205061232103424/3j5HUXMY.png'
   }, {
     id: 4,
-    name: 'Mike Harrington',
-    lastText: 'This is wicked good ice cream.',
+    name: 'Caracas',
+    lastText: 'Club Magnum - 10/07',
     face: 'https://pbs.twimg.com/profile_images/578237281384841216/R3ae1n61.png'
+  }, {
+    id: 5,
+    name: 'Caracas',
+    lastText: 'Centro Cultural BOD - 16 al 19/07',
+    face: 'img/giras/caracas-bod.jpg'
+  }, {
+    id: 6,
+    name: 'Estados Unidos',
+    lastText: 'Miami - 24 al 27/07',
+    face: 'img/giras/miami.jpg'
   }];
 
   return {
