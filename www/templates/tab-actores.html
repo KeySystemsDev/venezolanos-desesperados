@@ -1,0 +1,16 @@
+<ion-view view-title="Actores">
+    <ion-content>
+    
+        <div class="list">
+
+            <a class="item item-thumbnail-left item-icon-right" ng-repeat="chat in chats" href="#">
+              <img ng-src="{{chat.face}}">
+              <br>
+              <h2>{{chat.name}}</h2>
+              <p>{{chat.lastText}}</p>
+            </a>
+
+        </div>
+  
+    </ion-content>
+</ion-view>

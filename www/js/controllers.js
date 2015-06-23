@@ -1,6 +1,8 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope) {})
+.controller('ActoresCtrl', function($scope , Chats) {
+    $scope.chats = Chats.all();
+})
 
 .controller('GiraCtrl', function($scope, Chats) {
   // With the new view caching in Ionic, Controllers are only called
@@ -12,9 +14,7 @@ angular.module('starter.controllers', [])
   //});
   
   $scope.chats = Chats.all();
-  $scope.remove = function(chat) {
-    Chats.remove(chat);
-  }
+
 })
 
 .controller('GiraDetailCtrl', function($scope, $stateParams, Chats) {
