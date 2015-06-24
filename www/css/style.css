@@ -76,3 +76,13 @@
   font-size: 25px;
   color: #808080;
 }
+.img-app img{
+    width: 35px;
+    height: 35px;
+}
+.button-acerca{
+  padding: 0px;
+}
+.button-acerca-vd{
+  margin-right: 5px;
+}
