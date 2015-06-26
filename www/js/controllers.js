@@ -1,21 +1,9 @@
 angular.module('starter.controllers', [])
 
-.controller('ActoresCtrl', function($scope , Chats) {
+.controller('ActoresCtrl', function($scope , Chats, $ionicScrollDelegate, $timeout) {
     $scope.chats = Chats.all();
-})
 
-.controller('GiraCtrl', function($scope, Chats, $ionicScrollDelegate, $ionicScrollDelegate) {
-  // With the new view caching in Ionic, Controllers are only called
-  // when they are recreated or on app start, instead of every page change.
-  // To listen for when this page is active (for example, to refresh data),
-  // listen for the $ionicView.enter event:
-  //
-  //$scope.$on('$ionicView.enter', function(e) {
-  //});
-  
-  $scope.chats = Chats.all();
-
-  var Cards = (function() {
+    var Cards = (function() {
   
   var view  = $('.view');
   var vw    = view.innerWidth();
@@ -124,11 +112,38 @@ angular.module('starter.controllers', [])
 
 Cards.init();
 
-  $scope.top = function() {
-        $ionicScrollDelegate.scrollTop();
-        
+
+
+    $scope.top = function() {
+        $ionicScrollDelegate.scrollTop(); 
+            $timeout(function() {
+                $ionicScrollDelegate.getScrollView().options.scrollingY = false;
+
+            }, 500);         
     };
 
+    $scope.onscroll = function() {
+        $ionicScrollDelegate.getScrollView().options.scrollingY = true;     
+    };
+
+
+
+
+
+})
+
+.controller('GiraCtrl', function($scope, Chats, Gira) {
+  // With the new view caching in Ionic, Controllers are only called
+  // when they are recreated or on app start, instead of every page change.
+  // To listen for when this page is active (for example, to refresh data),
+  // listen for the $ionicView.enter event:
+  //
+  //$scope.$on('$ionicView.enter', function(e) {
+  //});
+  
+  $scope.chats = Chats.all();
+
+  
 })
 
 .controller('GiraDetailCtrl', function($scope, $stateParams, Chats) {

@@ -273,10 +273,10 @@ ul {
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
   position: absolute;
-  top: 35%;
+  top: 32%;
   left: 50%;
-  width: 384px;
-  height: 640px;
+  width: 100%;
+  height: 600px;
   z-index: 2;
   visibility: hidden;
   -webkit-transform-origin: top center;
