@@ -128,6 +128,16 @@ ul {
 .card__list {
   padding: 0.75rem;
 }
+.card__item-gira {
+  margin: 0 0 0.75rem;
+  padding: 2.25rem 1.5rem;
+  border-top: 4px solid #404040;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background: white;
+  cursor: pointer;
+  -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+          transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
 .card__item {
   margin: 0 0 0.75rem;
   padding: 2.25rem 1.5rem;
