@@ -7,10 +7,14 @@
 					<li class="card__item-gira card__item--blue">
 						<div class="card__info">
 	                        <div class="info-player">
-	                            <p class="img-gira"><img ng-src="{{chat.face}}"></p>
-	                            <p class="info-player__name"><small>{{chat.lastText}}</small><br>{{chat.name}}</p>
+	                            <p class="img-gira"><img ng-src="{{chat.img}}" style="border-radius: 50%;"></p>
+	                            <p>
+	                            	<small style="font-size: 12px;">{{chat.estado}}</small>
+	                            	<br>
+	                            	<small style="font-size: 16px;">{{chat.lugar}}</small>
+	                            </p>
 	                        </div>
-	                        <div class="info-place">2<sup>da</sup></div>
+	                        <div class="info-place"><sup>{{chat.hora}}</sup></div>
 	                    </div>
 					</li>
 				</a>

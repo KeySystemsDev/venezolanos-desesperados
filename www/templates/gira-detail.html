@@ -1,37 +1,16 @@
-<!--
-  This template loads for the 'tab.friend-detail' state (app.js)
-  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
-  The FriendsCtrl pulls data from the Friends service (service.js)
-  The Friends service returns an array of friend data
--->
 <ion-view view-title="{{chat.name}}">
-  	<!--<ion-content class="padding">
-	    <img src="{{chat.face}}" style="width: 100%;">
-	    <div class="item item-divider">
-    		{{chat.lastText}}
-  		</div>
-	    <p align="justify">            
-	     	Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Qui ut wisi vocibus suscipiantur, quo dicit ridens inciderint id. Quo mundi lobortis reformidans eu, legimus senserit definiebas an eos. Eu sit tincidunt incorrupte definitionem, vis mutat affert percipit cu, eirmod consectetuer signiferumque eu per. In usu latine equidem dolores. Quo no falli viris intellegam, ut fugit veritus placerat per.
 
-	    </p>
-    </ion-content>-->
-    
     <ion-content class="list card">
 		<div class="item item-avatar">
-			<img src="img/avatar.png">
-			<h2>Marty McFly</h2>
-			<p><i class="icon ion-calendar"></i> November 05, 1955</p>
+			<img src="{{chat.img}}">
+			<h2>{{chat.lugar}}</h2>
+			<p>{{chat.fecha}} - {{chat.hora}} <i class="icon ion-clock"></i></p>
 		</div>
 
 		<div class="item item-body">
-			<img class="full-image" src="{{chat.face}}" style="border-radius: 7px;">
+			<img class="full-image" src="{{chat.img}}" style="border-radius: 7px;">
 			<p>
-		  		This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
-		  		the content is from a card-body consisting of an image and paragraph text. The footer
-		  		consists of tabs, icons aligned left, within the card-footer.
-			</p>
-			<p>
-		  		<a href="#" class="subdued"><i class="icon ion-clock"></i> 8:00 pm</a>
+		  		<b>Entradas a la venta en:</b> {{chat.tickera}}
 			</p>
 		</div>
 

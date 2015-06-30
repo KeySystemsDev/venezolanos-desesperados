@@ -1,121 +1,137 @@
 angular.module('starter.services', [])
 
-.factory('Chats', function() {
-  // Might use a resource here that returns a JSON array
+	.factory('Chats', function() {
+	  	
+	  	var chats = [
+		  	{
+			    id: 0,
+			    estado: 'Puerto Ordaz',
+			    img: 'img/giras/17-05-puerto-ordaz.jpg',
+		      	lugar: 'Colegio Loyola',
+		      	fecha: '17 de Mayo de 2015',
+		      	hora: '9:00 pm',
+		      	tickera: 'Libería Latina (Orinokia Mall), Tiendas Cibus (C.C Costa Atrántica), Quick Express (Alta Vista), Taquillas del Colegio.',
+		  	}, {
+			    id: 1,
+			    estado: 'Barinas',
+			    img: 'img/giras/26-06-barinas.jpg',
+		      	lugar: "Salón Quero's",
+		      	fecha: '26 de Junio de 2015',
+		      	hora: '8:00 pm',
+		      	tickera: 'Staff Style Peluquería (C.C Divina Pastora), Garzon (C.C El Dorado), Stand Venezolanos Desesperados (C.C Cima).' ,
+		  	},{
+			    id: 2,
+			    estado: 'San Antonio',
+			    img: 'img/giras/27-06-san-antonio.jpg',
+		      	lugar: 'Salón Milli Rossi',
+		      	fecha: '27 de Junio de 2015',
+		      	hora: '8:00 pm',
+		      	tickera: 'Little Joe (C.C La Casona - C.C Los Altos),  Oficinas del Salon.',
+		  	}, {
+			    id: 3,
+			    estado: 'Caracas',
+			    img: 'img/giras/10-07-caracas.jpg',
+		      	lugar: 'Magnum City Club',
+		      	fecha: '10 de Julio de 2015',
+		      	hora: '7:00 pm',
+		      	tickera: 'www.ticketmundo.com',
+		  	}, {
+			    id: 4,
+			    estado: 'Maracaibo',
+			    img: 'img/giras/15-07-maracaibo.jpg',
+		      	lugar: 'Aula Magna URU',
+		      	fecha: '15 de Julio de 2015',
+		      	hora: '9:00 pm',
+		      	tickera: 'www.miticket.com, Libreria Europa, Gardo, Acuario, Grenners.',
+		  	}, {
+			    id: 5,
+			    estado: 'Caracas',
+			    img: 'img/giras/16-07-caracas.jpg',
+		      	lugar: 'Centro Cultural B.O.D',
+		      	fecha: '16 y 17 de Julio de 2015',
+		      	hora: '8:00 pm',
+		      	tickera: 'www.ticketmundo.com',
+		  	}, {
+			    id: 6,
+			    estado: 'Caracas',
+			    img: 'img/giras/16-07-caracas.jpg',
+		      	lugar: 'Centro Cultural B.O.D',
+		      	fecha: '18 y 19 de Julio de 2015',
+		      	hora: '6:00 pm',
+		      	tickera: 'www.ticketmundo.com',
+		  	}, {
+			    id: 7,
+			    estado: 'Miami',
+			    img: 'img/giras/25-07-miami.jpg',
+		      	lugar: 'Bank United Center',
+		      	fecha: '25 de Julio de 2015',
+		      	hora: '8:00 pm',
+		      	tickera: 'www.ticketmaster.com',
+		  	}, {
+			    id: 8,
+			    estado: 'Panama',
+			    img: 'img/giras/29-08-panama.jpg',
+		      	lugar: 'Por Confirmar',
+		      	fecha: '29 de Agosto de 2015',
+		      	hora: '---',
+		      	tickera: 'hispanomedios@gmail.com',
+		  	}, {
+			    id: 9,
+			    estado: 'Maracaibo',
+			    img: 'img/giras/13-09-barquisimeto.jpg',
+		      	lugar: 'Palacio de Eventos',
+		      	fecha: '12 de Septiembre de 2015',
+		      	hora: '8:00 pm	',
+		      	tickera: 'www.miticket.com, Libreria Europa, Gardo, Acuario, Grenners.',
+		  	}, {
+			    id: 10,
+			    estado: 'Barquisimeto',
+			    img: 'img/giras/13-09-barquisimeto.jpg',
+		      	lugar: 'Teatro Juares',
+		      	fecha: '13 de Septiembre de 2015',
+		      	hora: '6:00 pm	',
+		      	tickera: 'www.mdticket.com',
+		  	}, {
+			    id: 11,
+			    estado: 'Valencia',
+			    img: 'img/giras/26-09-valencia.jpg',
+		      	lugar: 'Teatro Municipal de Valencia',
+		      	fecha: '26 de Septiembre de 2015',
+		      	hora: '3:00 pm	',
+		      	tickera: 'www.tuticket.com',
+		  	}, {
+			    id: 12,
+			    estado: 'Valencia',
+			    img: 'img/giras/26-09-valencia.jpg',
+		      	lugar: 'Teatro Municipal de Valencia',
+		      	fecha: '26 de Septiembre de 2015',
+		      	hora: '5:00 pm	',
+		      	tickera: 'www.tuticket.com',
+		  	}, {
+			    id: 13,
+			    estado: 'Valencia',
+			    img: 'img/giras/26-09-valencia.jpg',
+		      	lugar: 'Teatro Municipal de Valencia',
+		      	fecha: '26 de Septiembre de 2015',
+		      	hora: '7:00 pm	',
+		      	tickera: 'www.tuticket.com',
+		  	}     
+	  	];
 
-  	/*=====================================================
-  	=            Necesito los Siguientes campos           =
-  	=====================================================*/
-  	/**
-  	
-  		TODO:
-  		id
-  		nombre del estado
-  		lugar
-  		fecha
-  		hora
-  		direccion
-  	**/
-  	
-  	var chats = [{
-	    id: 0,
-	    name: 'Ciudad Bolívar',
-	    lastText: 'Teatro Las Nieves - 20/06',
-	    face: 'img/giras/ciudad-bolivar.jpg'
-  	}, {
-	    id: 1,
-	    name: 'Lecheria',
-	    lastText: 'Hotel Punta Palma - 21/06',
-	    face: 'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'
-  	},{
-	    id: 2,
-	    name: 'Barinas',
-	    lastText: "Salón Quero's - 26/06",
-	    face: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
-  	}, {
-	    id: 3,
-	    name: 'San Antonio de los Altos',
-	    lastText: 'C.C. La Casona II - 27/06',
-	    face: 'https://pbs.twimg.com/profile_images/598205061232103424/3j5HUXMY.png'
-  	}, {
-	    id: 4,
-	    name: 'Caracas',
-	    lastText: 'Club Magnum - 10/07',
-	    face: 'https://pbs.twimg.com/profile_images/578237281384841216/R3ae1n61.png'
-  	}, {
-	    id: 5,
-	    name: 'Caracas',
-	    lastText: 'Centro Cultural BOD - 16 al 19/07',
-	    face: 'img/giras/caracas-bod.jpg'
-  	}, {
-	    id: 6,
-	    name: 'Estados Unidos',
-	    lastText: 'Miami - 24 al 27/07',
-	    face: 'img/giras/miami.jpg'
-  	}];
-
-  return {
-    all: function() {
-    	return chats;
-    },
-    remove: function(chat) {
-      	chats.splice(chats.indexOf(chat), 1);
-    },
-    get: function(chatId) {
-      	for (var i = 0; i < chats.length; i++) {
-        	if (chats[i].id === parseInt(chatId)) {
-          		return chats[i];
-        	}
-      	}
-      	return null;
-    }
-};
-})
-
-.factory('Gira', function() {
-  // Might use a resource here that returns a JSON array
-
-  // Some fake testing data
-  var gira = [{
-    id: 0,
-    name: 'Ciudad Bolívar',
-    lastText: 'Teatro Las Nieves - 20/06',
-    face: 'img/giras/ciudad-bolivar.jpg'
-  }, {
-    id: 1,
-    name: 'Lecheria',
-    lastText: 'Hotel Punta Palma - 21/06',
-    face: 'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'
-  },{
-    id: 2,
-    name: 'Barinas',
-    lastText: "Salón Quero's - 26/06",
-    face: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
-  }, {
-    id: 3,
-    name: 'San Antonio de los Altos',
-    lastText: 'C.C. La Casona II - 27/06',
-    face: 'https://pbs.twimg.com/profile_images/598205061232103424/3j5HUXMY.png'
-  }, {
-    id: 4,
-    name: 'Caracas',
-    lastText: 'Club Magnum - 10/07',
-    face: 'https://pbs.twimg.com/profile_images/578237281384841216/R3ae1n61.png'
-  }, {
-    id: 5,
-    name: 'Caracas',
-    lastText: 'Centro Cultural BOD - 16 al 19/07',
-    face: 'img/giras/caracas-bod.jpg'
-  }, {
-    id: 6,
-    name: 'Estados Unidos',
-    lastText: 'Miami - 24 al 27/07',
-    face: 'img/giras/miami.jpg'
-  }];
-
-  return {
-    all: function() {
-      return gira;
-    }
-  };
-});;
+	  return {
+	    all: function() {
+	    	return chats;
+	    },
+	    remove: function(chat) {
+	      	chats.splice(chats.indexOf(chat), 1);
+	    },
+	    get: function(chatId) {
+	      	for (var i = 0; i < chats.length; i++) {
+	        	if (chats[i].id === parseInt(chatId)) {
+	          		return chats[i];
+	        	}
+	      	}
+	      	return null;
+	    }
+	};
+});
