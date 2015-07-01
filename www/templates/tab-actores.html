@@ -2,16 +2,19 @@
     <ion-content>
 
         <div class="view">
+            <div class="item item-divider">
+                Actores
+            </div>
             <ul class="card__list">
-                <a class="gira-ruta" ng-repeat="actor in actores" href="#/tab/actores/{{actor.id_actor}" ng-click="id_actor({{ actor.id_actor }})">
+                <a class="gira-ruta" ng-repeat="actor in actores" href="#/tab/actores/{{actor.id_actores}" ng-click="id_actor({{ actor.id_actores }})">
                     <li class="card__item-gira card__item--blue">
                         <div class="card__info">
                             <div class="info-player">
-                                <p class="img-gira"><img ng-src="{{actor.img_actores}}" style="border-radius: 50%;"></p>
+                                <p class="img-gira"><img ng-src="{{actor.img_actores}}" style="border-radius: 5px;"></p>
                                 <p>
-                                    <small style="font-size: 12px;">{{actor.estado_actor}}</small>
+                                    <small style="font-size: 20px;">{{actor.nombre_actores}}</small>
                                     <br>
-                                    <small style="font-size: 16px;">{{actor.lugar_actor}}</small>
+                                    <small style="font-size: 12px;">{{actor.profesion_actores}}</small>
                                 </p>
                             </div>
                             <div class="info-place"><sup>{{actor.hora_actor}}</sup></div>
@@ -19,6 +22,13 @@
                     </li>
                 </a>
             </ul>
+            <div class="item item-divider">
+                Productor
+            </div>
+
+            <div class="item item-divider">
+                Escritor
+            </div>
         </div>
         
           

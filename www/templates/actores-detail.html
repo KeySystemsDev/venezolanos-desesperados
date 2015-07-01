@@ -1,16 +1,15 @@
 <ion-view view-title="{{actor[0].nombre_actores}}">
 
     <ion-content class="list card">
-		<div class="item item-avatar">
-			<img src="{{gira[0].img_gira}}">
-			<h2>{{gira[0].lugar_gira}}</h2>
-			<p>{{gira[0].fecha_gira}} - {{gira[0].hora_gira}} <i class="icon ion-clock"></i></p>
+		<div class="item">
+			<h2>{{actor[0].nombre_actores}}</h2>
+			<p style="font-size: 12px;">{{actor[0].profesion_actores}}</p>
 		</div>
 
 		<div class="item item-body">
-			<img class="full-image" src="{{gira[0].img_gira}}" style="border-radius: 7px;">
-			<p>
-		  		<b>Entradas a la venta en:</b> {{gira[0].tickera_gira}}
+			<img class="full-image" src="{{actor[0].img_actores}}" style="border-radius: 7px;">
+			<p align="justify">
+		  		<b>Biografía:</b> {{actor[0].biografia_actores}}
 			</p>
 		</div>
 
@@ -24,8 +23,8 @@
 		  		Twitter
 			</a>
 			<a class="tab-item" href="#">
-		  		<i class="icon ion-social-whatsapp"></i>
-		  		Whatsapp
+		  		<i class="icon ion-android-share-alt"></i>
+		  		Compartir
 			</a>
 		</div>
 	</ion-content>
