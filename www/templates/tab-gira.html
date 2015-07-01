@@ -3,18 +3,18 @@
 		
 		<div class="view">
 			<ul class="card__list">
-				<a class="gira-ruta" ng-repeat="chat in chats" href="#/tab/gira/{{chat.id}}">
+				<a class="gira-ruta" ng-repeat="gira in giras" href="#/tab/gira/{{gira.id_gira}" ng-click="id_gira({{ gira.id_gira }})">
 					<li class="card__item-gira card__item--blue">
 						<div class="card__info">
 	                        <div class="info-player">
-	                            <p class="img-gira"><img ng-src="{{chat.img}}" style="border-radius: 50%;"></p>
+	                            <p class="img-gira"><img ng-src="{{gira.img_gira}}" style="border-radius: 50%;"></p>
 	                            <p>
-	                            	<small style="font-size: 12px;">{{chat.estado}}</small>
+	                            	<small style="font-size: 12px;">{{gira.estado_gira}}</small>
 	                            	<br>
-	                            	<small style="font-size: 16px;">{{chat.lugar}}</small>
+	                            	<small style="font-size: 16px;">{{gira.lugar_gira}}</small>
 	                            </p>
 	                        </div>
-	                        <div class="info-place"><sup>{{chat.hora}}</sup></div>
+	                        <div class="info-place"><sup>{{gira.hora_gira}}</sup></div>
 	                    </div>
 					</li>
 				</a>

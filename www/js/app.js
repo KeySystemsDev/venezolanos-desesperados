@@ -58,7 +58,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       }
     })
     .state('tab.gira-detail', {
-      url: '/gira/:chatId',
+      url: '/gira/:id',
       views: {
         'tab-gira': {
           templateUrl: 'templates/gira-detail.html',

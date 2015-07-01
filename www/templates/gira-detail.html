@@ -1,16 +1,16 @@
-<ion-view view-title="{{chat.name}}">
+<ion-view view-title="{{gira[0].lugar_gira}}">
 
     <ion-content class="list card">
 		<div class="item item-avatar">
-			<img src="{{chat.img}}">
-			<h2>{{chat.lugar}}</h2>
-			<p>{{chat.fecha}} - {{chat.hora}} <i class="icon ion-clock"></i></p>
+			<img src="{{gira[0].img_gira}}">
+			<h2>{{gira[0].lugar_gira}}</h2>
+			<p>{{gira[0].fecha_gira}} - {{gira[0].hora_gira}} <i class="icon ion-clock"></i></p>
 		</div>
 
 		<div class="item item-body">
-			<img class="full-image" src="{{chat.img}}" style="border-radius: 7px;">
+			<img class="full-image" src="{{gira[0].img_gira}}" style="border-radius: 7px;">
 			<p>
-		  		<b>Entradas a la venta en:</b> {{chat.tickera}}
+		  		<b>Entradas a la venta en:</b> {{gira[0].tickera_gira}}
 			</p>
 		</div>
 
