@@ -47,6 +47,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       }
     }
   })
+  .state('tab.actores-detail', {
+      url: '/actores/:id',
+      views: {
+        'tab-actores': {
+          templateUrl: 'templates/actores-detail.html',
+          controller: 'ActoresDetailCtrl'
+        }
+      }
+    })
 
   .state('tab.gira', {
       url: '/gira',

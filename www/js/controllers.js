@@ -3,7 +3,13 @@ angular.module('starter.controllers', [])
 .controller('ActoresCtrl', function($scope , $rootScope, Actores ) {
 	$scope.actores = Actores.get();
 
-	console.log($scope.actores);
+	$scope.id_actor = function(id) {
+        $rootScope.id_actor = id;
+    }
+})
+
+.controller('ActoresDetailCtrl', function($scope, $rootScope, Actores) {
+	$scope.actor = Actores.get({id:$rootScope.id_actor});
 })
 
 .controller('GiraCtrl', function($scope, $rootScope, Giras) {

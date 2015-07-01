@@ -1,7 +1,25 @@
 <ion-view view-title="Actores">
     <ion-content>
     
-        
+        <div class="view">
+            <ul class="card__list">
+                <a class="gira-ruta" ng-repeat="actor in actores" href="#/tab/actores/{{actor.id_actor}" ng-click="id_actor({{ actor.id_actor }})">
+                    <li class="card__item-gira card__item--blue">
+                        <div class="card__info">
+                            <div class="info-player">
+                                <p class="img-gira"><img ng-src="{{actor.img_actores}}" style="border-radius: 50%;"></p>
+                                <p>
+                                    <small style="font-size: 12px;">{{actor.estado_actor}}</small>
+                                    <br>
+                                    <small style="font-size: 16px;">{{actor.lugar_actor}}</small>
+                                </p>
+                            </div>
+                            <div class="info-place"><sup>{{actor.hora_actor}}</sup></div>
+                        </div>
+                    </li>
+                </a>
+            </ul>
+        </div>
         
           
     </ion-content>
