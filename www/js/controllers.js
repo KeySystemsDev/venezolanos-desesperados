@@ -20,8 +20,8 @@ angular.module('starter.controllers', [])
 		  	var data = [
 		  		{
 			     	num: 9,
-			      	handle: '@tonyromo',
-			      	info: 'This is some info about the player and sports.'
+			      	handle: 'Twt: @AstridHerrera84 <br> Ig: @AstridHerrera84',
+			      	info: 'ASTRID CAROLINA HERRERA. Actriz / Locutora / Miss Mundo 1984. .'
 			    },{
 			      	num: 18,
 			      	handle: '@tombrady',
@@ -75,35 +75,35 @@ angular.module('starter.controllers', [])
 			    cardinfo.hide();
 			    cardhandle.hide();
 			    cardfull.on('transitionend', function() {
-		      	card.removeAttr('style');
-		      	cardnum.show();
-		      	cardinfo.show();
-		      	cardhandle.show();
-		      	cardfull.off('transitionend');
-		    });
-	  	};
+			      	card.removeAttr('style');
+			      	cardnum.show();
+			      	cardinfo.show();
+			      	cardhandle.show();
+			      	cardfull.off('transitionend');
+			    });
+		  	};
 	  
-	  	var updateData = function(index) {
-		    cardnum.text(data[index].num);
-		    cardhandle.text(data[index].handle);
-		    cardinfo.text(data[index].info);
-	  	};
-	  
-	  	var bindActions = function() {
-		    card.on('click', moveCard);
-		    arrow.on('click', closeCard);
-	  	};
-	  
-	  	var init = function() {
-	    	bindActions();
-	  	};
-	  
-	  	return {
-	    init: init
-	};  
-});
+		  	var updateData = function(index) {
+			    cardnum.text(data[index].num);
+			    cardhandle.text(data[index].handle);
+			    cardinfo.text(data[index].info);
+		  	};
+		  
+		  	var bindActions = function() {
+			    card.on('click', moveCard);
+			    arrow.on('click', closeCard);
+		  	};
+		  
+		  	var init = function() {
+		    	bindActions();
+		  	};
+		  
+		  	return {
+		    init: init
+		};  
+	}());
 
-Cards.init();
+	Cards.init();
     $scope.top = function() {
         $ionicScrollDelegate.scrollTop(); 
         $timeout(function() {
