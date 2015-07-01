@@ -182,15 +182,15 @@ ul {
   color: #2EA83B;
 }
 .card__item--yellow {
-  border-top-color: #BDB235;
+  border-top-color: #f8f510;
 }
 .card__item--yellow p.info-player__num {
-  background: #BDB235;
+  background: #f8f510;
   text-shadow:  1px 1px rgba(129, 122, 36, 0.7) , 2px 2px rgba(134, 126, 37, 0.715) , 3px 3px rgba(139, 131, 38, 0.73) , 4px 4px rgba(143, 135, 40, 0.745) , 5px 5px rgba(148, 139, 41, 0.76) , 6px 6px rgba(151, 143, 42, 0.775) , 7px 7px rgba(155, 146, 43, 0.79) , 8px 8px rgba(159, 150, 44, 0.805) , 9px 9px rgba(162, 152, 45, 0.82) , 10px 10px rgba(165, 155, 46, 0.835) , 11px 11px rgba(168, 158, 47, 0.85) , 12px 12px rgba(170, 160, 47, 0.865) , 13px 13px rgba(173, 163, 48, 0.88) , 14px 14px rgba(175, 165, 49, 0.895) , 15px 15px rgba(177, 167, 49, 0.91) , 16px 16px rgba(179, 169, 50, 0.925) , 17px 17px rgba(181, 171, 50, 0.94) , 18px 18px rgba(183, 173, 51, 0.955) , 19px 19px rgba(185, 174, 52, 0.97) , 20px 20px rgba(187, 176, 52, 0.985);
 }
 .card__item--yellow:hover .info-player__name,
 .card__item--yellow:hover .info-place {
-  color: #BDB235;
+  color: #f8f510;
 }
 .card__item--tan {
   border-top-color: #AA9E5C;
