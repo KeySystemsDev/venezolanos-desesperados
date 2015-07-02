@@ -11,23 +11,29 @@
   	<ion-content class="padding">
    		
 		<img src="img/vd.jpg" style="width: 100%;">
+		<form name="formulario" id="formulario">
+			<div class="list list-inset">
+			  	<label class="item item-input">
+			  		<span class="input-label">Nombre</span>
+			    	<input type="text" placeholder="KeySystems" id="i_nombre" name="nombre" ng-model="formData.i_nombre" required>
+			  	</label>
+			  	<label class="item item-input">
+			  		<span class="input-label">Correo</span>
+			    	<input type="text" placeholder="nombre@dominio.com" id="i_correo" name="correo" ng-model="formData.i_correo" required>
+			  	</label>
+			  	<label class="item item-input">
+			  		<span class="input-label">Telefono</span>
+			    	<input type="number" placeholder="Telefono" id="i_telefono" name="telefono" ng-model="formData.i_telefono" required>
+			  	</label>
 
-		<div class="list list-inset">
-		  	<label class="item item-input">
-		  		<span class="input-label">Nombre</span>
-		    	<input type="text" placeholder="KeySystems">
-		  	</label>
-		  	<label class="item item-input">
-		  		<span class="input-label">Correo</span>
-		    	<input type="text" placeholder="keystems@gmail.com">
-		  	</label>
-		  	<label class="item item-input">
-		  		<span class="input-label">Telefono</span>
-		    	<input type="text" placeholder="04127688727">
-		  	</label>
-		</div>
+			  	<label class="item item-input">
+				    <textarea placeholder="Escriba aqui su solicitud" rows="3" id="i_mensaje" name="mensaje" ng-model="formData.i_mensaje" required></textarea>
+				</label>
+			  
+			</div>
 
-		<center><button class="button button-calm">Enviar</button></center>
+			<center><button class="button button-calm" type="submit" value="enviar" ng-disabled="formulario.$invalid" ng-click="enviar(formData)">Enviar</button></center>
+		</form>
 
   	</ion-content>
 </ion-view>

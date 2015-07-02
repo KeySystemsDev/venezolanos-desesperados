@@ -24,8 +24,23 @@ angular.module('starter.controllers', [])
 	$scope.gira = Giras.get({id:$rootScope.id_gira});
 })
 
-.controller('AccountCtrl', function($scope) {
-  	$scope.settings = {
-    	enableFriends: true
-  	};
+.controller('AccountCtrl', function($scope, $ionicPopup, Mensaje) {
+  	$scope.formData = {i_correo_fijo : 'Hispanomedios@gmail.com'};
+
+    $scope.enviar = function(formData){
+      
+      Mensaje.get(formData).$promise.then(function(data) {
+            
+                    $ionicPopup.alert({ title:    'Mensaje de Enviado',
+                                        template: 'El mensaje fue enviado.'});
+
+                    $scope.formData = {i_correo_fijo : 'Hispanomedios@gmail.com'};
+
+                }, function(error) {
+                    // error hand
+                    console.log(error);
+                    $ionicPopup.alert({ title:    'Mensaje de Error',
+                                        template: 'No se pudo enviar el mensaje.'});
+                });
+    }
 });
