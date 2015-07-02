@@ -394,19 +394,38 @@ ul {
     text-decoration: none;
 }
 #loading-bar .bar {
-  background: #2c3e50;
+  background: #5f1d12;
   margin-top: 44px;
   height: 3px;
   padding: 0px;
 }
 #loading-bar-spinner .spinner-icon {
-  border-top-color:  #2c3e50;
-  border-left-color: #2c3e50;
+  border-top-color:  #5f1d12;
+  border-left-color: #5f1d12;
   margin-top: 47px;
 }
 #loading-bar .peg {
-  -moz-box-shadow: #2c3e50 1px 0 6px 1px;
-  -ms-box-shadow: #2c3e50 1px 0 6px 1px;
-  -webkit-box-shadow: #2c3e50 1px 0 6px 1px;
-  box-shadow: #2c3e50 1px 0 6px 1px;
+  -moz-box-shadow: #5f1d12 1px 0 6px 1px;
+  -ms-box-shadow: #5f1d12 1px 0 6px 1px;
+  -webkit-box-shadow: #5f1d12 1px 0 6px 1px;
+  box-shadow: #5f1d12 1px 0 6px 1px;
+}
+.color-amarillo i {
+  color: #f8f510;
+}
+.color-azul i {
+  color: blue;
+}
+.color-red i {
+  color: red;
+}
+
+.tabs-top.tabs-striped .tab-item.tab-item-active, .tabs-top.tabs-striped .tab-item.active, .tabs-top.tabs-striped .tab-item.activated {
+  margin-top: 1px;
+  border-width: 0px 0px 2px 0px !important;
+  border-style: solid;
+  border-color: #5f1d12;
+}
+.ion-tabs.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-color-active-positive .tab-item.active, ion-tabs.tabs-color-active-positive .tab-item.activated {
+  color: red;
 }
