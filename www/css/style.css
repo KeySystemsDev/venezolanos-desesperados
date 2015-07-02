@@ -101,13 +101,22 @@
 }
 .acerca-img {
     display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  height: 150px;
- }
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 150px;
+}
+
+ .ks-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+}
+
 .acerca{
-  background-image: url(../img/fondo_acerca.jpg);
+  /*background-image: url(../img/fondo_acerca.jpg);*/
 }
 
 ul {
