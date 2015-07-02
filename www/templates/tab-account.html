@@ -10,30 +10,30 @@
 
   	<ion-content class="padding">
    		
-		<img src="img/vd.jpg" style="width: 100%;">
-		<form name="formulario" id="formulario">
-			<div class="list list-inset">
-			  	<label class="item item-input">
-			  		<span class="input-label">Nombre</span>
-			    	<input type="text" placeholder="KeySystems" id="i_nombre" name="nombre" ng-model="formData.i_nombre" required>
-			  	</label>
-			  	<label class="item item-input">
-			  		<span class="input-label">Correo</span>
-			    	<input type="text" placeholder="nombre@dominio.com" id="i_correo" name="correo" ng-model="formData.i_correo" required>
-			  	</label>
-			  	<label class="item item-input">
-			  		<span class="input-label">Telefono</span>
-			    	<input type="number" placeholder="Telefono" id="i_telefono" name="telefono" ng-model="formData.i_telefono" required>
-			  	</label>
-
-			  	<label class="item item-input">
-				    <textarea placeholder="Escriba aqui su solicitud" rows="3" id="i_mensaje" name="mensaje" ng-model="formData.i_mensaje" required></textarea>
-				</label>
-			  
-			</div>
-
-			<center><button class="button button-calm" type="submit" value="enviar" ng-disabled="formulario.$invalid" ng-click="enviar(formData)">Enviar</button></center>
-		</form>
-
+		<img src="img/Flayer800x800pxl.jpg" style="width: 100%;">
+		<div class="item tabs tabs-secondary tabs-icon-left">
+			<a class="tab-item" href="@HispanoMedio">
+		  		<i class="icon ion-social-facebook"></i>
+		  		Instagram
+			</a>
+			<a class="tab-item" href="@HispanoMedio">
+		  		<i class="icon ion-social-twitter"></i>
+		  		Twitter
+			</a>
+			<a class="tab-item" href="#">
+		  		<i class="icon ion-android-share-alt"></i>
+		  		Compartir
+			</a>
+		</div>
+		<div class="list">
+		 	<a class="item item-icon-left" href="#">
+    			<i class="icon ion-email"></i>
+    			prensahispanomedio@gmail.com
+  			</a>
+		 	<a class="item" href="#">
+		 		<i class="icon ion-android-call"></i>
+			    0261-7518164
+			</a>
+		</div>
   	</ion-content>
 </ion-view>
