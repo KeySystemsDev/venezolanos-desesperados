@@ -403,14 +403,14 @@ ul {
     text-decoration: none;
 }
 #loading-bar .bar {
-  background: #5f1d12;
+  background: #4e4eb5;
   margin-top: 44px;
   height: 3px;
   padding: 0px;
 }
 #loading-bar-spinner .spinner-icon {
-  border-top-color:  #5f1d12;
-  border-left-color: #5f1d12;
+  border-top-color:  #d92a2a;
+  border-left-color: #d92a2a;
   margin-top: 47px;
 }
 #loading-bar .peg {
@@ -433,8 +433,11 @@ ul {
   margin-top: 1px;
   border-width: 0px 0px 2px 0px !important;
   border-style: solid;
-  border-color: #5f1d12;
+  border-color: #4e4eb5;
 }
 .ion-tabs.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-color-active-positive .tab-item.active, ion-tabs.tabs-color-active-positive .tab-item.activated {
   color: red;
+}
+.icon-custon i{
+    color: #999;
 }
