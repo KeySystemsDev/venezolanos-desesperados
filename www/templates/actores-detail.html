@@ -8,7 +8,8 @@
         </div>  
     </ion-nav-buttons>
 
-    <ion-content class="list card">
+    <ion-content>
+    <div class="list card">
 		<div class="item">
 			<h2>{{actor[0].nombre_actores}}</h2>
 			<p style="font-size: 12px;">{{actor[0].profesion_actores}}</p>
@@ -22,18 +23,19 @@
 		</div>
 
 		<div class="item tabs tabs-secondary tabs-icon-left">
-			<a class="tab-item" href="#">
-		  		<i class="icon ion-social-facebook"></i>
-		  		Facebook
-			</a>
-			<a class="tab-item" href="#">
+			<a class="tab-item" href="#" browse-to="https://twitter.com/{{actor[0].twitter_actores}}">
 		  		<i class="icon ion-social-twitter"></i>
 		  		Twitter
+			</a>
+			<a class="tab-item" href="#" browse-to="https://instagram.com/{{actor[0].instagram_actores}}">
+		  		<i class="icon ion-social-instagram"></i>
+		  		Instagram
 			</a>
 			<a class="tab-item" href="#">
 		  		<i class="icon ion-android-share-alt"></i>
 		  		Compartir
 			</a>
 		</div>
+	</div>
 	</ion-content>
 </ion-view>

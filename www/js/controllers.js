@@ -10,6 +10,7 @@ angular.module('starter.controllers', [])
 
 .controller('ActoresDetailCtrl', function($scope, $rootScope, Actores) {
 	$scope.actor = Actores.get({id:$rootScope.id_actor});
+  console.log($scope.actor);
 })
 
 .controller('GiraCtrl', function($scope, $rootScope, Giras) {

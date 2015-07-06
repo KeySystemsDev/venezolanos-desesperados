@@ -456,3 +456,7 @@ ul {
   color: #6464BC;
   font-size: 17px;
 }
+
+.card, .list-inset {
+  margin: 0px 0px;
+}
