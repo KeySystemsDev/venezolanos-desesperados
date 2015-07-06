@@ -88,7 +88,7 @@
 }
 
 .box-acerca{
-  margin-top:120px;
+  margin-top:80px;
 }
 .box-acerca-text{
   text-align: center;
@@ -439,5 +439,9 @@ ul {
   color: red;
 }
 .icon-custon i{
+    color: #999;
+}
+.redes-acerca i{
+    font-size: 25px;
     color: #999;
 }
