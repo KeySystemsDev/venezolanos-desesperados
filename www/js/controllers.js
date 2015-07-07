@@ -8,9 +8,12 @@ angular.module('starter.controllers', [])
     }
 })
 
-.controller('ActoresDetailCtrl', function($scope, $rootScope, Actores) {
+.controller('ActoresDetailCtrl', function($scope, $rootScope, $cordovaSocialSharing, Actores) {
 	$scope.actor = Actores.get({id:$rootScope.id_actor});
-  console.log($scope.actor);
+  
+  $scope.shareAnywhere = function() {
+        $cordovaSocialSharing.share("Venezolanos Desesperados.", "Venezolanos Desesperados", "www/img/icon.jpg", "http://venezolanosdesesperados.com.ve/");
+    }
 })
 
 .controller('GiraCtrl', function($scope, $rootScope, Giras) {
@@ -43,5 +46,12 @@ angular.module('starter.controllers', [])
                     $ionicPopup.alert({ title:    'Mensaje de Error',
                                         template: 'No se pudo enviar el mensaje.'});
                 });
+    }
+})
+
+.controller('AcercaCtrl', function($scope, $cordovaSocialSharing) {
+  
+  $scope.shareAnywherekey = function() {
+        $cordovaSocialSharing.share("Key Systems", "Key Systems", "www/img/ks.JPG", "https://play.google.com/store/apps/details?id=com.ionicframework.keysystems549574");
     }
 });
