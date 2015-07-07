@@ -405,7 +405,7 @@ ul {
 #loading-bar .bar {
   background: #4e4eb5;
   margin-top: 44px;
-  height: 3px;
+  height: 2px;
   padding: 0px;
 }
 #loading-bar-spinner .spinner-icon {
@@ -453,7 +453,7 @@ ul {
   border-color: transparent;
   background: none;
   box-shadow: none;
-  color: #6464BC;
+  color: #5171C3;
   font-size: 17px;
 }
 
