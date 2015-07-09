@@ -95,7 +95,28 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         controller: 'AcercaCtrl'
       }
     }
+  })
+
+  .state('tab.acerca-gira', {
+    url: '/acerca-gira',
+    views: {
+      'tab-gira': {
+        templateUrl: 'templates/tab-acerca.html',
+        controller: 'AcercaCtrl'
+      }
+    }
+  })
+  
+  .state('tab.acerca-actores', {
+    url: '/acerca-actores',
+    views: {
+      'tab-actores': {
+        templateUrl: 'templates/tab-acerca.html',
+        controller: 'AcercaCtrl'
+      }
+    }
   });
+
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/gira');
