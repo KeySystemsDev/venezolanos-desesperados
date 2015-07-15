@@ -1,7 +1,17 @@
 angular.module('starter.controllers', [])
 
-.controller('ActoresCtrl', function($scope , $rootScope, Actores ) {
+.controller('ActoresCtrl', function($scope, $http, $rootScope, Actores ) {
 	$scope.actores = Actores.get();
+
+    $scope.RecargarActores = function(){
+        $http.get('http://venezolanosdesesperados.com.ve/giras/actores.php')
+            .success(function(actores) {
+                $scope.actores = actores;
+            })
+            .finally(function() {
+                $scope.$broadcast('scroll.refreshComplete');
+            });
+    }
 
 	$scope.id_actor = function(id) {
         $rootScope.id_actor = id;
@@ -16,8 +26,18 @@ angular.module('starter.controllers', [])
     }
 })
 
-.controller('GiraCtrl', function($scope, $rootScope, Giras) {
+.controller('GiraCtrl', function($scope, $http, $rootScope, Giras) {
   	$scope.giras = Giras.get();
+
+    $scope.RecargarGira = function(){
+        $http.get('http://venezolanosdesesperados.com.ve/giras/gira.php')
+            .success(function(giras) {
+                $scope.giras = giras;
+            })
+            .finally(function() {
+                $scope.$broadcast('scroll.refreshComplete');
+            });
+    }
 
   	$scope.id_gira = function(id) {
         $rootScope.id_gira = id;

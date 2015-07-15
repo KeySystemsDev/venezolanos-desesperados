@@ -5,10 +5,13 @@
             <div class="col button-acerca button-acerca-vd">
             	<a class="button button-icon button-clear ion-information" href="#/tab/acerca-gira"></a>
             </div>
-        </div>  
+        </div>
+
     </ion-nav-buttons>
 
 	<ion-content>
+		
+		<ion-refresher pulling-icon="ion-plane" on-refresh="RecargarGira()"></ion-refresher>
 		
 		<div class="view">
 			<ul class="card__list">
