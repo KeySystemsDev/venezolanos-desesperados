@@ -44,8 +44,12 @@ angular.module('starter.controllers', [])
     }
 })
 
-.controller('GiraDetailCtrl', function($scope, $rootScope, Giras) {
+.controller('GiraDetailCtrl', function($scope, $rootScope, $cordovaSocialSharing, Giras) {
 	$scope.gira = Giras.get({id:$rootScope.id_gira});
+
+    $scope.shareAnywhereGiraDetail = function() {
+        $cordovaSocialSharing.share("Venezolanos Desesperados", "Venezolanos Desesperados", "www/img/icon.jpg", "http://venezolanosdesesperados.com.ve/");
+    }
 })
 
 .controller('AccountCtrl', function($scope, $ionicPopup, $cordovaSocialSharing, Mensaje) {
