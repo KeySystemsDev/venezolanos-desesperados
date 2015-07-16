@@ -20,6 +20,7 @@ angular.module('starter.controllers', [])
 
 .controller('ActoresDetailCtrl', function($scope, $rootScope, $cordovaSocialSharing, Actores) {
 	$scope.actor = Actores.get({id:$rootScope.id_actor});
+    console.log($scope.actor);
   
   $scope.shareAnywhere = function() {
         $cordovaSocialSharing.share("Venezolanos Desesperados.", "Venezolanos Desesperados", "www/img/icon.jpg", "http://venezolanosdesesperados.com.ve/");
