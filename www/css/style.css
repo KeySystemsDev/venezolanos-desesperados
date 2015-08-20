@@ -1,12 +1,9 @@
 /* Empty. Add your own CSS if you like */
 .bar.bar-energized {
-  border-color: #FFFF00;
-  background-color: #FFFF00;
-  background-image: linear-gradient(0deg, #FFFF00, #FFFF00 50%, transparent 50%);
-  color: #fff;
+  background: url('../img/bar.png');
 }
 .bar.bar-energized .title {
-  color: #808080;
+  color: #fff;
 }
 .bar-energized .button.button-clear {
   border-color: transparent;
@@ -88,7 +85,7 @@
 }
 
 .box-acerca{
-  margin-top:80px;
+  margin-top:40px;
 }
 .box-acerca-text{
   text-align: center;
@@ -403,7 +400,7 @@ ul {
     text-decoration: none;
 }
 #loading-bar .bar {
-  background: #4e4eb5;
+  background: #F8B116;
   margin-top: 44px;
   height: 2px;
   padding: 0px;
@@ -411,7 +408,17 @@ ul {
 #loading-bar-spinner .spinner-icon {
   border-top-color:  #d92a2a;
   border-left-color: #d92a2a;
-  margin-top: 47px;
+  width: 45px;
+  height: 45px;
+}
+#loading-bar-spinner {
+    display: block;
+    position: absolute;
+    z-index: 10002;
+    left: 50%;
+    top:50%;
+    margin-left: -22.5px;
+    margin-top: -22.5px;
 }
 #loading-bar .peg {
   -moz-box-shadow: #5f1d12 1px 0 6px 1px;
@@ -420,13 +427,20 @@ ul {
   box-shadow: #5f1d12 1px 0 6px 1px;
 }
 .color-amarillo i {
-  color: #f8f510;
+  color: #F8B116;
 }
 .color-azul i {
-  color: blue;
+  color: #1E4B9C;
 }
 .color-red i {
-  color: red;
+  color: #B82326;
+}
+
+.tabs-striped .tab-item.tab-item-active, .tabs-striped .tab-item.active, .tabs-striped .tab-item.activated {
+  margin-top: -2px;
+  border-style: solid;
+  border-width: 2px 0 0 0;
+  border-color: #1E4B9C;
 }
 
 .tabs-top.tabs-striped .tab-item.tab-item-active, .tabs-top.tabs-striped .tab-item.active, .tabs-top.tabs-striped .tab-item.activated {
@@ -453,10 +467,10 @@ ul {
   border-color: transparent;
   background: none;
   box-shadow: none;
-  color: #5171C3;
+  color: #fff;
   font-size: 17px;
 }
 
-.card, .list-inset {
+.card.card-custon, .list-inset {
   margin: 0px 0px;
 }

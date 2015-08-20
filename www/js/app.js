@@ -28,8 +28,9 @@ angular.module('starter', [ 'ionic',
   });
 })
 
-.config(function($stateProvider, $urlRouterProvider, cfpLoadingBarProvider) {
+.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider, cfpLoadingBarProvider) {
 
+  $ionicConfigProvider.tabs.position('bottom')
   cfpLoadingBarProvider.includeSpinner = true;
   // Ionic uses AngularUI Router which uses the concept of states
   // Learn more here: https://github.com/angular-ui/ui-router
